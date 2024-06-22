@@ -14,10 +14,19 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambia font */
 }
 
+main{
+
+    overflow-y: auto;
+}
+
+body{
+    overflow: hidden;
+}
 .navBar {
     display: flex;
     justify-content: center;
     background-color: #333;
+    position: fixed;
 }
 
 .navBar ul {
