@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lollerino</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <h1>LOLLERINO</h1>
+        <a href="/dev/aboutUs.html">About Us</a>
+        <a href="/dev/myCollection.html">My Collection</a>
+        <a href="/dev/sign-in.html">Sign In</a>
+        <a href="/dev/login.html">Login</a>
+    </div>
+    
+    <div class="container">
+        <div class="filters">
+            <h2>Filters</h2>
+            <form id="filterForm">
+                <!-- Costo Filter -->
+                <div class="filter-option">
+                    <label for="cost">Cost</label>
+                    <select id="cost" name="cost">
+                        <option value="asc">Ascending</option>
+                        <option value="desc">Descending</option>
+                    </select>
+                </div>
+        
+                <!-- Tema Filter -->
+                <div class="filter-option">
+                    <label for="theme">Theme</label>
+                    <select id="theme" name="theme">
+                        <option value="all">All</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="sci-fi">Sci-Fi</option>
+                        <option value="medieval">Medieval</option>
+                        <!-- Aggiungi altri temi qui -->
+                    </select>
+                </div>
+        
+                <!-- Rarità Filter -->
+                <div class="filter-option">
+                    <label for="rarity">Rarity</label>
+                    <select id="rarity" name="rarity">
+                        <option value="all">All</option>
+                        <option value="common">Common</option>
+                        <option value="rare">Rare</option>
+                        <option value="legendary">Legendary</option>
+                        <!-- Aggiungi altre rarità qui -->
+                    </select>
+                </div>
+        
+                <!-- Anno di uscita Filter -->
+                <div class="filter-option">
+                    <select id="rarity" name="rarity">
+                        <option value="2025">2025</option>
+                        <option value="2025">2024</option>
+                        <option value="2025">2023</option>
+                        <option value="2025">2022</option>
+                        <option value="2025">2021</option>
+                        <option value="2025">2020</option>
+                        <option value="2025">2019</option>
+                        <option value="2025">2018</option>
+                        <option value="2025">2017</option>
+                        <option value="2025">2016</option>
+                        <option value="2025">2015</option>
+                        <option value="2025">2014</option>
+                        <option value="2025">2013</option>
+                        <option value="2025">2012</option>
+                        <option value="2025">2011</option>
+                        <option value="2025">2010</option>
+                        <option value="2025">2009</option>
+                    </select>
+                </div>
+        
+                <!-- Bundle Filter -->
+                <div class="filter-option">
+                    <label for="bundle">Bundle</label>
+                    <select id="bundle" name="bundle">
+                        <option value="any">Any</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+        
+                <!-- Submit Button -->
+                <button class="apply-filters-button" type="submit">Apply Filters</button>
+            </form>
+        </div>
+        
+        <!-- Articles -->
+        <div class="articleContainer">
+            <!-- Gli articles verranno caricati dinamicamente in base ai filtri -->
+        </div>
+        
+        
+        <!-- Articles -->
+        <div class="articleContainer">
+            <!-- Gli articles verranno caricati dinamicamente in base ai filtri -->
+        </div>
+        
+        
+        <div class="main-content">
+            <div class="news-box">
+                <h2>Latest News</h2>
+                <div class="card-carousel">
+                    <button class="carousel-arrow left-arrow">&lt;</button>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-title">Update 1</div>
+                            <div class="card-description">Monitor the latest changes to the website. Stay updated on features and improvements!</div>
+                            <div class="card-actions">
+                                <button>Read More</button>
+                                <button>Dismiss</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title">Version 1.1</div>
+                            <div class="card-description">Check out the new additions in version 1.1, including updated visuals and new content.</div>
+                            <div class="card-actions">
+                                <button>Read More</button>
+                                <button>Dismiss</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title">Beta Features</div>
+                            <div class="card-description">Preview beta features before they're officially launched. Share your feedback!</div>
+                            <div class="card-actions">
+                                <button>Read More</button>
+                                <button>Dismiss</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title">Alpha Features</div>
+                            <div class="card-description">Preview alpha features before they're officially launched. Share your feedback!</div>
+                            <div class="card-actions">
+                                <button>Read More</button>
+                                <button>Dismiss</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-arrow right-arrow">&gt;</button>
+                </div>
+            </div>
+            
+            <div class="articleContainer">
+                <div class="article">
+                    <img src="/skins/Ryze-Championship.png" alt="Ryze-Championship">
+                    <p>Ryze Championship</p>
+                </div>
+                <div class="article">
+                    <img src="/skins/Kayn-SnowMoon.png" alt="Kayn-SnowMoon">
+                    <p>Kayn SnowMoon</p>
+                </div>
+                <div class="article">
+                    <img src="/skins/Diana-BloodMoon.png" alt="Diana-BloodMoon">
+                    <p>Diana BloodMoon</p>
+                </div>
+
+                <div class="article">
+                    <img src="/skins/Ryze-Championship.png" alt="Ryze-Championship">
+                    <p>Ryze Championship</p>
+                </div>
+                <div class="article">
+                    <img src="/skins/Kayn-SnowMoon.png" alt="Kayn-SnowMoon">
+                    <p>Kayn SnowMoon</p>
+                </div>
+                <div class="article">
+                    <img src="/skins/Diana-BloodMoon.png" alt="Diana-BloodMoon">
+                    <p>Diana BloodMoon</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

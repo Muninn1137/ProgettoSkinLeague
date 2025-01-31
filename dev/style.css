@@ -1,0 +1,250 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #1a1a1a;
+    padding: 15px;
+    display: flex;
+    align-items: center; /* Allinea verticalmente gli elementi */
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.navbar h1 {
+    margin: 0;
+    color: #b388ff;
+    font-size: 30px;
+}
+
+.navbar a {
+    color: #b388ff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 15px; /* Aggiunge spazio tra i link */
+}
+
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.filters {
+    width: 250px; /* Imposta la larghezza dei filtri */
+    height: fit-content;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.filter-option {
+    margin-bottom: 15px;
+    max-width: 250px;
+}
+
+.filter-option label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filter-option select, .filter-option input {
+    width: 100%;
+    max-width: 250px;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background-color: #333;
+    color: #fff;
+    box-sizing: border-box;  /* Aggiungi questa proprietà */
+}
+
+
+.filters button {
+    background-color: #b388ff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: #9a7ad9;
+}
+
+
+.main-content {
+    width: 75%;
+    margin-left: 5%;
+}
+
+.news-box {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    max-width: 1290px;
+}
+
+.articleContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.article {
+    max-width: 400px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column; /* Disposizione verticale (immagine sopra e testo sotto) */
+    align-items: center; /* Centra il contenuto orizzontalmente */
+    justify-content: flex-start; /* Allinea il contenuto in alto */
+    text-decoration: none;
+    background-color: #222; /* Colore di sfondo coerente con il resto del sito */
+    padding: 15px;
+    border-radius: 15px; /* Bordi arrotondati della card */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transizione al passaggio del mouse */
+}
+
+.article img {
+    width: 100%; /* Immagine che occupa tutta la larghezza */
+    height: auto; /* Mantiene le proporzioni originali */
+    object-fit: cover; /* L'immagine si adatta senza deformarsi */
+    border-radius: 15px; /* Bordo arrotondato per l'immagine */
+}
+
+.article p {
+    color: #e0e0e0; /* Colore del testo */
+    font-size: 1em; /* Dimensione del testo */
+    margin-top: 10px; /* Spazio tra l'immagine e il testo */
+    margin-bottom: -5px;
+    text-align: center; /* Centra il testo */
+}
+
+
+/* Stile per il card-carousel */
+.card-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Frecce del carousel */
+.carousel-arrow {
+    background-color: #252525;
+    color: #b388ff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 10px;
+}
+
+.carousel-arrow:hover {
+    background-color: #b388ff;
+    color: #121212;
+    transform: scale(1.2);
+}
+
+/* Container delle card */
+.card-container {
+    display: flex;
+    overflow-x: hidden; /* Rimuove la barra di scorrimento orizzontale */
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+
+/* Stile delle singole card */
+.card {
+    flex: 0 0 calc(30% - 20px);
+    min-width: 350px;
+    max-width: 400px;
+    max-height: 300px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border-radius: 10px;
+    text-align: left;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Titolo della card */
+.card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #b388ff;
+}
+
+/* Descrizione della card */
+.card-description {
+    font-size: 1em;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Pulsanti o link nella card */
+.card-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.card-actions button {
+    padding: 8px 12px;
+    background-color: #252525;
+    color: #b388ff;
+    border: 1px solid #b388ff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card-actions button:hover {
+    background-color: #b388ff;
+    color: #121212;
+}
+
+/* Responsive design per dispositivi mobili */
+@media (max-width: 768px) {
+    .card {
+        flex: 0 0 80%;
+        min-width: auto;
+        height: auto;
+    }
+
+    .carousel-arrow {
+        padding: 10px;
+        font-size: 20px;
+    }
+}
