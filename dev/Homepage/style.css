@@ -314,3 +314,101 @@ body {
 .skin-right p {
     display: block;
 }
+
+
+
+.sign-in-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sign-in-page .registration-container {
+    background-color: #1a1a1a;
+    padding: 2rem;               /* Padding esterno per distanziare il contenuto dai bordi */
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;      /* Assicura che il padding venga incluso nelle dimensioni totali */
+}
+
+.registration-container h1 {
+    font-size: 2rem;
+    color: #9b59b6; /* Colore viola per il titolo */
+    margin-bottom: 1rem;
+}
+
+.registration-container label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    text-align: left;
+    color: #ccc; /* Colore testo leggermente chiaro */
+    font-size: 0.9rem;
+}
+
+.sign-in-page .registration-container input {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #222;
+    color: #fff;
+    font-size: 1rem;
+    width: 100%; /* Assicura che gli input occupino tutta la larghezza disponibile */
+    box-sizing: border-box; /* Considera il padding nel calcolo della larghezza */
+}
+
+.registration-container input::placeholder {
+    color: #aaa; /* Colore del placeholder */
+}
+
+.sign-in-page .registration-container button {
+    width: 100%; /* Fa sì che il pulsante occupi tutta la larghezza disponibile */
+    padding: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #9b59b6;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+}
+
+.registration-container button:hover {
+    background-color: #8248a5; /* Viola più scuro al passaggio del mouse */
+}
+
+.sign-in-page .registration-container h1 {
+    font-size: 2rem;
+    color: #9b59b6;
+    margin-bottom: 1rem;
+}
+
+.sign-in-page .registration-container button {
+    background-color: #9b59b6;
+    color: #fff;
+}
+
+.sign-in-page .registration-container button:hover {
+    background-color: #8248a5;
+}
+
+.sign-in-page .registration-container p {
+    color: #ccc; /* Colore del testo del paragrafo */
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.sign-in-page .registration-container .sign-in-link {
+    color: #9b59b6; /* Colore del link (viola) */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    font-weight: bold;
+}
+
+.sign-in-page .registration-container .sign-in-link:hover {
+    color: #8248a5; /* Colore del link al passaggio del mouse */
+}
