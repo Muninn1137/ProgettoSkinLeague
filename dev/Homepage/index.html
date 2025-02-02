@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,18 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
+
 <body>
     <div class="navbar">
-        <a href="/dev/Homepage/index.html"><h1>LOLLERINO</h1></a>
+        <a href="/dev/Homepage/index.html">
+            <h1>LOLLERINO</h1>
+        </a>
         <a href="/dev/Homepage/aboutUs.html">About Us</a>
         <a href="/dev/Homepage/myCollection.html">My Collection</a>
         <a href="/dev/Homepage/sign-in.html">Sign In</a>
         <a href="/dev/Homepage/login.html">Login</a>
     </div>
-    
+
     <div class="container">
         <div class="filters">
             <h2>Filters</h2>
@@ -28,7 +32,7 @@
                         <option value="desc">Descending</option>
                     </select>
                 </div>
-        
+
                 <!-- Tema Filter -->
                 <div class="filter-option">
                     <label for="theme">Theme</label>
@@ -40,7 +44,7 @@
                         <!-- Aggiungi altri temi qui -->
                     </select>
                 </div>
-        
+
                 <!-- Rarità Filter -->
                 <div class="filter-option">
                     <label for="rarity">Rarity</label>
@@ -52,30 +56,31 @@
                         <!-- Aggiungi altre rarità qui -->
                     </select>
                 </div>
-        
+
                 <!-- Anno di uscita Filter -->
                 <div class="filter-option">
-                    <select id="rarity" name="rarity">
+                    <label for="year">Year</label>
+                    <select id="year" name="year">
+                        <option value="all">All</option>
                         <option value="2025">2025</option>
-                        <option value="2025">2024</option>
-                        <option value="2025">2023</option>
-                        <option value="2025">2022</option>
-                        <option value="2025">2021</option>
-                        <option value="2025">2020</option>
-                        <option value="2025">2019</option>
-                        <option value="2025">2018</option>
-                        <option value="2025">2017</option>
-                        <option value="2025">2016</option>
-                        <option value="2025">2015</option>
-                        <option value="2025">2014</option>
-                        <option value="2025">2013</option>
-                        <option value="2025">2012</option>
-                        <option value="2025">2011</option>
-                        <option value="2025">2010</option>
-                        <option value="2025">2009</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2020">2019</option>
+                        <option value="2020">2018</option>
+                        <option value="2020">2017</option>
+                        <option value="2020">2016</option>
+                        <option value="2020">2015</option>
+                        <option value="2020">2014</option>
+                        <option value="2020">2013</option>
+                        <option value="2020">2012</option>
+                        <option value="2020">2011</option>
+                        <option value="2020">2010</option>
+                        <option value="2020">2009</option>
                     </select>
                 </div>
-        
                 <!-- Bundle Filter -->
                 <div class="filter-option">
                     <label for="bundle">Bundle</label>
@@ -85,24 +90,24 @@
                         <option value="no">No</option>
                     </select>
                 </div>
-        
+
                 <!-- Submit Button -->
                 <button class="apply-filters-button" type="submit">Apply Filters</button>
             </form>
         </div>
-        
+
         <!-- Articles -->
         <div class="articleContainer">
             <!-- Gli articles verranno caricati dinamicamente in base ai filtri -->
         </div>
-        
-        
+
+
         <!-- Articles -->
         <div class="articleContainer">
             <!-- Gli articles verranno caricati dinamicamente in base ai filtri -->
         </div>
-        
-        
+
+
         <div class="main-content">
             <div class="news-box">
                 <h2>Latest News</h2>
@@ -111,7 +116,8 @@
                     <div class="card-container">
                         <div class="card">
                             <div class="card-title">Update 1</div>
-                            <div class="card-description">Monitor the latest changes to the website. Stay updated on features and improvements!</div>
+                            <div class="card-description">Monitor the latest changes to the website. Stay updated on
+                                features and improvements!</div>
                             <div class="card-actions">
                                 <button>Read More</button>
                                 <button>Dismiss</button>
@@ -119,7 +125,8 @@
                         </div>
                         <div class="card">
                             <div class="card-title">Version 1.1</div>
-                            <div class="card-description">Check out the new additions in version 1.1, including updated visuals and new content.</div>
+                            <div class="card-description">Check out the new additions in version 1.1, including updated
+                                visuals and new content.</div>
                             <div class="card-actions">
                                 <button>Read More</button>
                                 <button>Dismiss</button>
@@ -127,7 +134,8 @@
                         </div>
                         <div class="card">
                             <div class="card-title">Beta Features</div>
-                            <div class="card-description">Preview beta features before they're officially launched. Share your feedback!</div>
+                            <div class="card-description">Preview beta features before they're officially launched.
+                                Share your feedback!</div>
                             <div class="card-actions">
                                 <button>Read More</button>
                                 <button>Dismiss</button>
@@ -135,7 +143,8 @@
                         </div>
                         <div class="card">
                             <div class="card-title">Alpha Features</div>
-                            <div class="card-description">Preview alpha features before they're officially launched. Share your feedback!</div>
+                            <div class="card-description">Preview alpha features before they're officially launched.
+                                Share your feedback!</div>
                             <div class="card-actions">
                                 <button>Read More</button>
                                 <button>Dismiss</button>
@@ -145,22 +154,23 @@
                     <button class="carousel-arrow right-arrow">&gt;</button>
                 </div>
             </div>
-            
+
             <div class="articleContainer">
                 <a href="/dev/DetailedSkins/Ryze-Championship.html" class="article-link">
-                    <div class="article">
+                    <div class="article" data-theme="fantasy" data-rarity="legendary" data-year="2024"
+                        data-bundle="yes">
                         <img src="/skins/Ryze-Championship.png" alt="Ryze-Championship">
                         <p>Ryze Championship</p>
                     </div>
                 </a>
                 <a href="/dev/DetailedSkins/Kayn-SnowMoon.html" class="article-link">
-                    <div class="article">
+                    <div class="article" data-theme="sci-fi" data-rarity="rare" data-year="2023" data-bundle="no">
                         <img src="/skins/Kayn-SnowMoon.png" alt="Kayn-SnowMoon">
                         <p>Kayn SnowMoon</p>
                     </div>
                 </a>
                 <a href="/dev/DetailedSkins/Diana-BloodMoon.html" class="article-link">
-                    <div class="article">
+                    <div class="article" data-theme="medieval" data-rarity="common" data-year="2022" data-bundle="yes">
                         <img src="/skins/Diana-BloodMoon.png" alt="Diana-BloodMoon">
                         <p>Diana BloodMoon</p>
                     </div>
@@ -171,4 +181,5 @@
         </div>
     </div>
 </body>
+
 </html>
