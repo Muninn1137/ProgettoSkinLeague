@@ -6,19 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault(); // Evita il refresh della pagina
 
         const selectedCost = document.getElementById("cost").value;
-        const selectedTheme = document.getElementById("theme").value;
         const selectedRarity = document.getElementById("rarity").value;
         const selectedYear = document.getElementById("year").value; // Corretto id
         const selectedBundle = document.getElementById("bundle").value;
 
         articles.forEach(article => {
             let shouldShow = true;
-
-            // Controlla il tema
-            if (selectedTheme !== "all" && !article.dataset.theme.includes(selectedTheme)) {
-                shouldShow = false;
-            }
-
             // Controlla la rarità
             if (selectedRarity !== "all" && article.dataset.rarity !== selectedRarity) {
                 shouldShow = false;
