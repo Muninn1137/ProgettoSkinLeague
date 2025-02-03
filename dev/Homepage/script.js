@@ -30,8 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (filterForm) {
         filterForm.addEventListener("submit", function (event) {
             event.preventDefault(); // Evita il refresh della pagina
-
-            const selectedCost = document.getElementById("cost").value;
+            
             const selectedRarity = document.getElementById("rarity").value;
             const selectedYear = document.getElementById("year").value; // Assicurati che l'ID sia corretto
             const selectedBundle = document.getElementById("bundle").value;
